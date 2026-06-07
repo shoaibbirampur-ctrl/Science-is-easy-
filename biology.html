@@ -1,14 +1,94 @@
-<h1>🌱 ফটোসিন্থেসিস</h1>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biology Lab</title>
 
-<p>সূর্যের আলো + পানি + CO₂ = খাদ্য</p>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2b9348, #55a630);
+  color: white;
+  text-align: center;
+}
 
-<button onclick="show()">ব্যাখ্যা দেখাও</button>
+header {
+  padding: 30px;
+}
 
-<h2 id="result"></h2>
+header h1 {
+  font-size: 36px;
+}
+
+.card {
+  background: white;
+  color: black;
+  width: 85%;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2b9348;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1b5e20;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #008000;
+  font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>🌱 বায়োলজি ল্যাব</h1>
+  <p>ফটোসিন্থেসিস (Photosynthesis) এক্সপেরিমেন্ট</p>
+</header>
+
+<div class="card">
+
+  <h2>🔬 ফটোসিন্থেসিস</h2>
+
+  <p>
+    সূর্যের আলো, পানি এবং কার্বন ডাই-অক্সাইড ব্যবহার করে
+    গাছ নিজের খাদ্য তৈরি করে।
+  </p>
+
+  <button onclick="photosynthesis()">
+    এক্সপেরিমেন্ট চালাও
+  </button>
+
+  <div id="result"></div>
+
+</div>
 
 <script>
-function show() {
+function photosynthesis() {
   document.getElementById("result").innerHTML =
-  "🌿 গাছ খাদ্য তৈরি করে এবং অক্সিজেন ছাড়ে";
+  "🌿 গাছ খাদ্য তৈরি করেছে এবং অক্সিজেন উৎপন্ন করেছে!";
 }
 </script>
+
+</body>
+</html>
